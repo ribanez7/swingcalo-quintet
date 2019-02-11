@@ -1,5 +1,13 @@
-@import "~bootstrap/scss/bootstrap.scss";
+@import "theme/bootstrap-4.1.2/bootstrap.min.css";
+// @import "~bootstrap/scss/bootstrap.scss";
+// @import "theme/font-awesome-4.7.0/css/font-awesome.min.css";
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
-@import "template/main_styles.css";
-@import "template/responsive.css";
+@import "theme/OwlCarousel2-2.2.1/owl.carousel.css";
+@import "theme/OwlCarousel2-2.2.1/owl.theme.default.css";
+@import "theme/OwlCarousel2-2.2.1/animate.css";
+@import "theme/colorbox/colorbox.css";
+@import "theme/jquery-datepicker/jquery-ui.css";
+@import "theme/jquery-timepicker/jquery.timepicker.css";
+@import "theme/main_styles.css";
+@import "theme/responsive.css";

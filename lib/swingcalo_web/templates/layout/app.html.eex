@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Swingcalo · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/main_styles.css") %>"/>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/responsive.css") %>"/>
   </head>
   <body>
     <div class="super_container">
@@ -148,6 +150,7 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/compression.js") %>"></script>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/custom.js") %>"></script>
   </body>
 </html>
