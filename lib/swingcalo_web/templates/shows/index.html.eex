@@ -44,7 +44,6 @@
     <div class="row themenu_row">
       <!-- Concierto -->
       <div class="col-lg-6 themenu_column">
-        <div class="themenu_image"><img src="images/starters.jpg" alt=""></div>
         <div class="themenu_col trans_400">
           <div class="themenu_col_title"><%= gettext "Concierto" %></div>
           <div class="dish_list">
@@ -55,7 +54,6 @@
       </div>
       <!-- Baile -->
       <div class="col-lg-6 themenu_column">
-        <div class="themenu_image"><img src="images/main.jpg" alt=""></div>
         <div class="themenu_col trans_400">
           <div class="themenu_col_title"><%= gettext "Banda para baile swing" %></div>
           <div class="dish_list">
@@ -68,7 +66,6 @@
       <div class="w-100 mt-3"></div>
       <!-- Didáctico -->
       <div class="col-lg-6 themenu_column">
-        <div class="themenu_image"><img src="images/deserts.jpg" alt=""></div>
         <div class="themenu_col trans_400">
           <div class="themenu_col_title"><%= gettext "Concierto didáctico" %></div>
           <div class="dish_list">
@@ -79,7 +76,6 @@
       </div>
       <!-- Amenización -->
       <div class="col-lg-6 themenu_column">
-        <div class="themenu_image"><img src="images/deserts.jpg" alt=""></div>
         <div class="themenu_col trans_400">
           <div class="themenu_col_title"><%= gettext "Amenización de eventos" %></div>
           <div class="dish_list">
@@ -119,14 +115,15 @@
                 </div>
                 <div class="sig_content_list">
                   <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li>Milonga de mis amores</li>
-                    <li>Danse Norvegien</li>
-                    <li>Caravan</li>
+                    <li>Tabú</li>
                     <li>Sheik of Araby</li>
+                    <li>Caravan</li>
+                    <li>Danse Norvégienne</li>
                     <li>L'Chaim</li>
+                    <li>Milonga de mis amores</li>
                   </ul>
                 </div>
-                <div class="button sig_button trans_200"><a href="#" style="pointer-events: none;"><%= gettext "En nuestros conciertos" %></a></div>
+                <div class="button sig_button trans_200"><a href="#" style="pointer-events: none;"><%= gettext "Disponible" %></a></div>
               </div>
             </div>
             <div class="col-lg-6 sig_col">
@@ -142,17 +139,16 @@
                 <div class="rating_r sig_rating rating_r_5"><i></i><i></i><i></i><i></i><i></i></div>
                 <div class="sig_name_container d-flex flex-row align-items-start justify-content-start">
                   <div class="sig_name">Swingcaló · Our selected</div>
-                  <div class="sig_price ml-auto">10€</div>
+                  <div class="sig_price ml-auto">3€</div>
                 </div>
                 <div class="sig_content_list">
                   <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li>Sing sang sung</li>
                     <li>Manoir de mes rêves</li>
-                    <li>Dorian Gray</li>
-                    <li>Veggies swing</li>
+                    <li>Sing sang sung</li>
+                    <li>Cumbia Gitana</li>
                   </ul>
                 </div>
-                <div class="button sig_button trans_200"><a href="#" style="pointer-events: none;"><%= gettext "En nuestros conciertos" %></a></div>
+                <div class="button sig_button trans_200"><a href="#" style="pointer-events: none;"><%= gettext "Disponible" %></a></div>
               </div>
             </div>
             <div class="col-lg-6 sig_col">

@@ -27,7 +27,7 @@
                     <li><a href="<%= Routes.home_path(@conn, :index) %>"><%= gettext "Inicio" %></a></li>
                     <li><a href="<%= Routes.band_path(@conn, :index) %>"><%= gettext "La banda" %></a></li>
                     <li><a href="<%= Routes.shows_path(@conn, :index) %>"><%= gettext "Espectáculos" %></a></li>
-                    <li><a href="<%= Routes.media_path(@conn, :index) %>"><%= gettext "Multimedia" %></a></li>
+                    <!--<li><a href="<%#= Routes.media_path(@conn, :index) %>"><%#= gettext "Multimedia" %></a></li>-->
                     <li><a href="<%= Routes.calendar_path(@conn, :index) %>"><%= gettext "Calendario" %></a></li>
                     <li><a href="<%= Routes.contact_path(@conn, :index) %>"><%= gettext "Contacto" %></a></li>
                   </ul>

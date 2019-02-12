@@ -10,7 +10,7 @@ defmodule SwingcaloWeb.CalendarView do
 
   def uniq_js(conn) do
     """
-    <script type="text/javascript" src="#{Routes.static_path(conn, "/js/blog.js")}"></script>
+    <script type="text/javascript" src="#{Routes.static_path(conn, "/js/elements.js")}"></script>
     """
     |> raw()
   end
