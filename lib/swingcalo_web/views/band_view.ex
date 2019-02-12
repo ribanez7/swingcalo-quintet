@@ -14,4 +14,8 @@ defmodule SwingcaloWeb.BandView do
     """
     |> raw()
   end
+
+  def title() do
+    gettext("La banda")
+  end
 end

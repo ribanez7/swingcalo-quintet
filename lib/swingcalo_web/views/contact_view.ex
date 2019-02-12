@@ -14,4 +14,8 @@ defmodule SwingcaloWeb.ContactView do
     """
     |> raw()
   end
+
+  def title() do
+    gettext("Contacto")
+  end
 end

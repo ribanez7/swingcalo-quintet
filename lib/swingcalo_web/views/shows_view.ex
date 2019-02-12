@@ -14,4 +14,8 @@ defmodule SwingcaloWeb.ShowsView do
     """
     |> raw()
   end
+
+  def title() do
+    gettext("Espectáculos")
+  end
 end

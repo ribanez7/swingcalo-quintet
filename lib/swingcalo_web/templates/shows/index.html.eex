@@ -6,9 +6,9 @@
       <div class="row">
         <div class="col">
           <div class="home_content text-center">
-            <div class="home_subtitle page_subtitle">The Venue</div>
+            <div class="home_subtitle page_subtitle">Swingcaló</div>
             <div class="home_title">
-              <h1>The Menu</h1>
+              <h1><%= gettext "Espectáculos" %></h1>
             </div>
           </div>
         </div>
@@ -16,15 +16,15 @@
     </div>
   </div>
 </div>
-<!-- The Menu -->
+<!-- The Shows -->
 <div class="themenu">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="section_title_container text-center">
-          <div class="section_subtitle page_subtitle">Something new</div>
+          <div class="section_subtitle page_subtitle">Swingcaló</div>
           <div class="section_title">
-            <h1>Discover Our Menu</h1>
+            <h1><%= gettext "Descubre nuestros espectáculos" %></h1>
           </div>
         </div>
       </div>
@@ -32,295 +32,75 @@
     <div class="row themenu_text_row">
       <div class="col-lg-6">
         <div class="themenu_text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla.</p>
+          <p><%= gettext "A lo largo de los años hemos confeccionado cuatro modalidades de espectáculo para todo tipo de oyentes y situaciones. Disfrutamos con nuestra música, y por ello la ofrecemos vestida con cuatro trajes distintos." %></p>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="themenu_text">
-          <p>Sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla.</p>
+          <p><%= gettext "A continuación podrás encontrar qué hacemos y escoger qué tipo de espectáculo es el que estabas buscando." %></p>
         </div>
       </div>
     </div>
     <div class="row themenu_row">
-      <!-- Starters -->
-      <div class="col-lg-4 themenu_column">
+      <!-- Concierto -->
+      <div class="col-lg-6 themenu_column">
         <div class="themenu_image"><img src="images/starters.jpg" alt=""></div>
         <div class="themenu_col trans_400">
-          <div class="themenu_col_title">Starters</div>
+          <div class="themenu_col_title"><%= gettext "Concierto" %></div>
           <div class="dish_list">
             <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Pork Tenderloin in Green Pepper</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Shrimp with Garlic</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Wild Mushroom with Chicken</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Oysters with Baked Potatoes</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Roast Pork</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
+            <p><%= gettext "Nuestro repertorio habitual de Swingcaló, basado en el jazz manouche y arreglado especialmente para nuestra formación. Reinterpretamos algunos estándares clásicos de los referentes del estilo (Django Reinhardt. Stephane Grappelli, Tchavolo Smitt...), junto a temas de diversos géneros musicales que adaptamos a nuestro particular sonido. Desde viejas melodías populares judías hasta una danza de tradición clásica, pasando por la milonga argentina, los ritmos flamencos, cubanos o el vals. A este repertorio, que hemos ido consolidando desde el comienzo, se le van sumando poco a poco algunas composiciones propias." %></p>
           </div>
         </div>
       </div>
-      <!-- Main -->
-      <div class="col-lg-4 themenu_column">
+      <!-- Baile -->
+      <div class="col-lg-6 themenu_column">
         <div class="themenu_image"><img src="images/main.jpg" alt=""></div>
         <div class="themenu_col trans_400">
-          <div class="themenu_col_title">Main</div>
+          <div class="themenu_col_title"><%= gettext "Banda para baile swing" %></div>
           <div class="dish_list">
             <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Chicken with Lemon</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Pork Tenderloin in Green Pepper</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Shrimp with Garlic</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Wild Mushroom with Chicken</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Oysters with Baked Potatoes</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Roast Pork</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
+            <p><%= gettext "Un repertorio escogido del estilo y la época, pensado y arreglado expresamente para bailar swing. Dada la creciente fiebre que se vive últimamente en todas partes por el baile swing y el lindy hop, no hemos podido quedarnos de lado." %></p>
+            <p><%= gettext "Ofrecemos nuestra música en directo para fiestas y jams bailongas. Nos encanta poder hacer que la gente se mueva y baile, y ellos aseguran que con música en directo mola mucho más." %></p>
           </div>
         </div>
       </div>
-      <!-- Deserts -->
-      <div class="col-lg-4 themenu_column">
+      <div class="w-100 mt-3"></div>
+      <!-- Didáctico -->
+      <div class="col-lg-6 themenu_column">
         <div class="themenu_image"><img src="images/deserts.jpg" alt=""></div>
         <div class="themenu_col trans_400">
-          <div class="themenu_col_title">Deserts</div>
+          <div class="themenu_col_title"><%= gettext "Concierto didáctico" %></div>
           <div class="dish_list">
             <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Lava Cake</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
+            <p><%= gettext "Concierto pedagógico: conciertos divulgativos y participativos adaptados según las diferentes necesidades. Pueden ir dirigidos a todos los públicos o a un colectivo concreto, utilizando el jazz manouche como hilo conductor del espectáculo. El concierto se puede proponer de distintas formas, dependiendo de los objetivos e intereses. Una opción que ya hemos podido disfrutar en nuestros conciertos en los centros cívicos de Barcelona es la propuesta de un viaje a través del jazz manouche, sumergiendo al público en el estilo y descubriendo la figura de su creador, Django Reinhardt. Pero también utilizamos nuestra música como medio para presentar los diferentes instrumentos del grupo, explicar historias o enseñar otras ideas musicales, siempre procurando que haya una participación activa por parte del público." %></p>
+          </div>
+        </div>
+      </div>
+      <!-- Amenización -->
+      <div class="col-lg-6 themenu_column">
+        <div class="themenu_image"><img src="images/deserts.jpg" alt=""></div>
+        <div class="themenu_col trans_400">
+          <div class="themenu_col_title"><%= gettext "Amenización de eventos" %></div>
+          <div class="dish_list">
             <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Orange Tart</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Cheese Cake</div>
-                <div class="dish_price">$20</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Chocolatte Mausse</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
-            <!-- Dish -->
-            <div class="dish">
-              <div class="dish_title_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="dish_title">Ice Cream</div>
-                <div class="dish_price">$17</div>
-              </div>
-              <div class="dish_contents">
-                <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                  <li>Pork</li>
-                  <li>Tenderloin</li>
-                  <li>Green Pepper</li>
-                </ul>
-              </div>
-              <div class="dish_order"><a href="#">Order Now</a></div>
-            </div>
+            <p><%= gettext "El repertorio de Swingcaló se adapta a la perfección a todo tipo de eventos y celebraciones, por su estilo elegante sin resultar aburrido, alegre y animado sin llegar a ser ruidoso o molesto." %></p>
+            <p><%= gettext "Siempre dentro de nuestro repertorio y respetando la formación del quinteto, el espectáculo ofrece la flexibilidad de moverse entre una amenización discreta o un concierto animado y elegante." %></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Signature Dishes -->
+<!-- Nuestras grabaciones -->
 <div class="sig">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="section_title_container">
-          <div class="section_subtitle page_subtitle">Something new</div>
+          <div class="section_subtitle page_subtitle">Swingcaló</div>
           <div class="section_title">
-            <h1>Our Signature Dishes</h1>
+            <h1><%= gettext "Nuestras grabaciones" %></h1>
           </div>
         </div>
       </div>
@@ -334,18 +114,19 @@
               <div class="sig_content">
                 <div class="rating_r sig_rating rating_r_5"><i></i><i></i><i></i><i></i><i></i></div>
                 <div class="sig_name_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="sig_name">Pork Tenderloin marinated in Green Pepper</div>
-                  <div class="sig_price ml-auto">$20</div>
+                  <div class="sig_name">Swingcaló · EP</div>
+                  <div class="sig_price ml-auto">10€</div>
                 </div>
                 <div class="sig_content_list">
                   <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li>Pork</li>
-                    <li>Tenderloin</li>
-                    <li>Green Pepper</li>
-                    <li>Veggies</li>
+                    <li>Milonga de mis amores</li>
+                    <li>Danse Norvegien</li>
+                    <li>Caravan</li>
+                    <li>Sheik of Araby</li>
+                    <li>L'Chaim</li>
                   </ul>
                 </div>
-                <div class="button sig_button trans_200"><a href="#">Order Now</a></div>
+                <div class="button sig_button trans_200"><a href="#" style="pointer-events: none;"><%= gettext "En nuestros conciertos" %></a></div>
               </div>
             </div>
             <div class="col-lg-6 sig_col">
@@ -360,48 +141,22 @@
               <div class="sig_content">
                 <div class="rating_r sig_rating rating_r_5"><i></i><i></i><i></i><i></i><i></i></div>
                 <div class="sig_name_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="sig_name">Beef Tartar with forest mushroms</div>
-                  <div class="sig_price ml-auto">$23</div>
+                  <div class="sig_name">Swingcaló · Our selected</div>
+                  <div class="sig_price ml-auto">10€</div>
                 </div>
                 <div class="sig_content_list">
                   <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li>Pork</li>
-                    <li>Tenderloin</li>
-                    <li>Green Pepper</li>
-                    <li>Veggies</li>
+                    <li>Sing sang sung</li>
+                    <li>Manoir de mes rêves</li>
+                    <li>Dorian Gray</li>
+                    <li>Veggies swing</li>
                   </ul>
                 </div>
-                <div class="button sig_button trans_200"><a href="#">Order Now</a></div>
+                <div class="button sig_button trans_200"><a href="#" style="pointer-events: none;"><%= gettext "En nuestros conciertos" %></a></div>
               </div>
             </div>
             <div class="col-lg-6 sig_col">
               <div class="sig_image"><img src="images/sig_2.jpg" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <!-- Signature Dish -->
-        <div class="sig_dish">
-          <div class="row row-eq-height">
-            <div class="col-lg-6 sig_col d-flex flex-column align-items-start justify-content-center">
-              <div class="sig_content">
-                <div class="rating_r sig_rating rating_r_5"><i></i><i></i><i></i><i></i><i></i></div>
-                <div class="sig_name_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="sig_name">Beef Steak with sauted vegetables</div>
-                  <div class="sig_price ml-auto">$20</div>
-                </div>
-                <div class="sig_content_list">
-                  <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li>Pork</li>
-                    <li>Tenderloin</li>
-                    <li>Green Pepper</li>
-                    <li>Veggies</li>
-                  </ul>
-                </div>
-                <div class="button sig_button trans_200"><a href="#">Order Now</a></div>
-              </div>
-            </div>
-            <div class="col-lg-6 sig_col">
-              <div class="sig_image"><img src="images/sig_3.jpg" alt=""></div>
             </div>
           </div>
         </div>

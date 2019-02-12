@@ -6,9 +6,9 @@
       <div class="row">
         <div class="col">
           <div class="home_content text-center">
-            <div class="home_subtitle page_subtitle">The Venue is</div>
+            <div class="home_subtitle page_subtitle">Swingcaló</div>
             <div class="home_title">
-              <h1>About us</h1>
+              <h1><%= gettext "La banda" %></h1>
             </div>
           </div>
         </div>
@@ -22,12 +22,12 @@
     <div class="row">
       <div class="col">
         <div class="intro_content">
-          <div class="intro_subtitle page_subtitle">Something new</div>
+          <div class="intro_subtitle page_subtitle">Swingcaló</div>
           <div class="intro_title">
-            <h2>An Extraordinery Experience</h2>
+            <h2><%= gettext "Una experiencia extraordinaria" %></h2>
           </div>
           <div class="intro_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla massa.</p>
+            <p><%= gettext "Swingcaló es una banda de jazz manouche caracterizada por su repertorio heredero de la música popular. Sonido fiel al estilo, pero a su vez muy personal." %></p>
           </div>
         </div>
         <div class="row">
@@ -39,15 +39,15 @@
     </div>
   </div>
 </div>
-<!-- Chefs -->
+<!-- Musicians -->
 <div class="chefs">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="section_title_container">
-          <div class="section_subtitle page_subtitle">Something new</div>
+          <div class="section_subtitle page_subtitle">Swingcaló</div>
           <div class="section_title">
-            <h1>Meet the Chefs</h1>
+            <h1><%= gettext "Conoce a los músicos" %></h1>
           </div>
         </div>
       </div>
@@ -55,57 +55,165 @@
     <div class="row chefs_text_row">
       <div class="col-lg-6">
         <div class="chefs_text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla.</p>
+          <p><%= gettext "Fruto del encuentro casual entre Laura y Rubén a raíz de un anuncio de clases de clarinete, surge la idea de formar un grupo de jazz manouche. Estos dos músicos de Terrassa no tardaron en encontrar a otros tres miembros más que se sumaron al proyecto. En poco tiempo ya estaba formado el quinteto, como el mítico Quintette du Hot Club de France de Django Reinhardt y Stéphane Grappelli pero con distinta formación. En este caso, una formación muy poco frecuente, ya que, si bien los instrumentos son habituales en el género, no es muy común encontrar una banda que cuente con clarinete, violín, dos guitarras y contrabajo." %></p>
+          <p><%= gettext "Hicieron falta varios encuentros, ensayos y conciertos antes de dar con el nombre adecuado. Swingcaló. El swing de los gitanos. Lo que viene a ser el jazz manouche o gypsy jazz. Género que surgió en Francia a finales de los años 1930's al coincidir el jazz, recién llegado a Europa, con la música tradicional de los gitanos." %></p>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="chefs_text">
-          <p>Sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla.</p>
+          <p><%= gettext "Ésta es la referencia en la música de Swingcaló, y de hecho no faltan en su repertorio temas clásicos del estilo, como Minor Swing o Nuages, compuestas y popularizadas por Django Reinhardt." %></p>
+          <p><%= gettext "Sin embargo, lo que caracteriza aSwingcaló es su capacidad para, de manera natural, adaptar temas de diversos estilos a su sonido particular. Siendo un grupo de manouche, su repertorio está arreglado expresamente para la formación. Sus temas van desde viejas melodías klezmer hasta la milonga argentina, pasando por ritmos flamencos o cubanos, pero en todo momento conserva su sonido reconocible y genuino, lo que hace que en sus conciertos haya un equilibrio de principio a fin." %></p>
         </div>
       </div>
     </div>
     <div class="row chefs_row row-eq-height">
-      <!-- Chef -->
-      <div class="col-xl-3 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
+      <!-- Musician -->
+      <div class="col-xl-2 offset-xl-1 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
           <div class="chef_image"><img src="images/chef_1.jpg" alt=""></div>
           <div class="chef_content text-center">
-            <div class="chef_name">Maria Smith</div>
-            <div class="chef_subtitle">Top Chef</div>
-            <div class="chef_button ml-auto mr-auto trans_400"><a href="#">see more</a></div>
+            <div class="chef_name"><%= gettext "Andrés Cruz" %></div>
+            <div class="chef_subtitle"><%= gettext "Violín" %></div>
+            <div class="chef_button ml-auto mr-auto trans_400"><a href="#" data-toggle="modal" data-target="#modalAndres"><%= gettext "saber más" %></a></div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="modalAndres" tabindex="-1" role="dialog" aria-labelledby="modalAndresTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalAndresTitle"><%= gettext "Andrés Cruz" %> · <%= gettext "Violín" %></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%= gettext "Nacido en Madrid en los años de la movida, este violinista de formación clásica siempre tuvo inquietud e interés por otras músicas que no fuesen las estrictamente academicistas del conservatorio. Pero tocando el violín, no lo tuvo fácil para salirse del redil conservador. Pasaron años de búsqueda, palos de ciego y grupos varios y de variopintos estilos, desde la chanson francesa hasta el reggae, pasando por la música contemporánea o el hillbilly. Finalmente, en 2011 llegó a parar a Barcelona para continuar su formación en jazz y música moderna, en donde más tarde se reuniría con el resto de músicos para formar Swingcaló." %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><%= gettext "Cerrar" %></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Chef -->
-      <div class="col-xl-3 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
+      <!-- Musician -->
+      <div class="col-xl-2 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
           <div class="chef_image"><img src="images/chef_2.jpg" alt=""></div>
           <div class="chef_content text-center">
-            <div class="chef_name">William Jones</div>
-            <div class="chef_subtitle">Sauce Chef</div>
-            <div class="chef_button ml-auto mr-auto trans_400"><a href="#">see more</a></div>
+            <div class="chef_name"><%= gettext "Dani López" %></div>
+            <div class="chef_subtitle"><%= gettext "Guitarra" %></div>
+            <div class="chef_button ml-auto mr-auto trans_400"><a href="#" data-toggle="modal" data-target="#modalDani"><%= gettext "saber más" %></a></div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="modalDani" tabindex="-1" role="dialog" aria-labelledby="modalDaniTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalDaniTitle"><%= gettext "Dani López" %> · <%= gettext "Guitarra solista" %></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%= gettext "Daniel López Martín, nacido en el Maresme, es un joven desesperadamente ecléctico, quien habiendo militado en grupos con estilos tan dispares como el punk, hard-rock, ska,reggae, cayó en la cuenta de que el gipsy es el estilo más hardcore de todos. La rápidas melodías solísticas de Django, Stochelo Rosenberg y compañía lo hechizaron inmediatamente y no dudó en ponerse a las filas de Swingcaló ni por un momento. Además de guitarrista, es también arreglista, y se frota las manos cuando surge la oportunidad de Frankeinstenizar un tema, cuanto más clásico mejor, y convertirlo en un vertiginoso tren de carga musical, con la esperanza de que más de unas caderas se muevan al ritmo que Swingcaló impone." %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><%= gettext "Cerrar" %></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Chef -->
-      <div class="col-xl-3 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
+      <!-- Musician -->
+      <div class="col-xl-2 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
           <div class="chef_image"><img src="images/chef_3.jpg" alt=""></div>
           <div class="chef_content text-center">
-            <div class="chef_name">Julien Williams</div>
-            <div class="chef_subtitle">Sushi Chef</div>
-            <div class="chef_button ml-auto mr-auto trans_400"><a href="#">see more</a></div>
+            <div class="chef_name"><%= gettext "Diego Civilotti" %></div>
+            <div class="chef_subtitle"><%= gettext "Contrabajo" %></div>
+            <div class="chef_button ml-auto mr-auto trans_400"><a href="#" data-toggle="modal" data-target="#modalDiego"><%= gettext "saber más" %></a></div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="modalDiego" tabindex="-1" role="dialog" aria-labelledby="modalDiegoTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalDiegoTitle"><%= gettext "Diego Civilotti" %> · <%= gettext "Contrabajo" %></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%= gettext "Desde que inició sus estudios de contrabajo con el Maestro Enric Rigau, su origen argentino y los antecedentes musicales en su familia -hijo del compositor Alejandro Civilotti y nieto del cantor de tango Hector Omar- lo llevaron a interesarse, más allá de la música académica, por el papel del contrabajo en el tango, las músicas populares y el jazz. Después de descubrir con alegría que había vida más allá de los corsés académicos, encontró en el manouche de Swingcaló un espacio inagotable de expresión armónica y rítmica. Cuando no está poseído por el swing del quinteto, se dedica a actividades más sensatas en el campo de la estética y la filosofía del arte en su faceta como investigador y profesor de filosofía." %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><%= gettext "Cerrar" %></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Chef -->
-      <div class="col-xl-3 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
+      <!-- Musician -->
+      <div class="col-xl-2 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
           <div class="chef_image"><img src="images/chef_4.jpg" alt=""></div>
           <div class="chef_content text-center">
-            <div class="chef_name">Suzie James</div>
-            <div class="chef_subtitle">Sauce Chef</div>
-            <div class="chef_button ml-auto mr-auto trans_400"><a href="#">see more</a></div>
+            <div class="chef_name"><%= gettext "Laura Lacueva" %></div>
+            <div class="chef_subtitle"><%= gettext "Clarinete" %></div>
+            <div class="chef_button ml-auto mr-auto trans_400"><a href="#" data-toggle="modal" data-target="#modalLaura"><%= gettext "saber más" %></a></div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="modalLaura" tabindex="-1" role="dialog" aria-labelledby="modalLauraTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLauraTitle"><%= gettext "Laura Lacueva" %> · <%= gettext "Clarinete" %></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%= gettext "Nació en la jazzística ciudad de Terrassa, predestinándola de algún modo a la música de este estilo. Después de estudiar en el Conservatorio de la misma ciudad, continúa sus estudios en Barcelona, en la Escuela Superior de Música de Catalunya, donde cursó pedagogía del clarinete. Su interés por todo tipo de música la ha llevado a tocar en orquestas, bandas y diferentes grupos de cámara. Gracias a esa inquietud y curiosidad llegó al jazz manouche, donde muy rápidamente se adentró en el estilo y consiguió reunir a los componentes de Swingcaló para tocar las tardes de los viernes." %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><%= gettext "Cerrar" %></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Musician -->
+      <div class="col-xl-2 offset-xl-0 col-md-6 offset-md-3 chef_col d-flex flex-column align-items-center justify-content-end">
+        <div class="chef">
+          <div class="chef_image"><img src="images/chef_4.jpg" alt=""></div>
+          <div class="chef_content text-center">
+            <div class="chef_name"><%= gettext "Rubén Ibáñez" %></div>
+            <div class="chef_subtitle"><%= gettext "Guitarra y armónica" %></div>
+            <div class="chef_button ml-auto mr-auto trans_400"><a href="#" data-toggle="modal" data-target="#modalRuben"><%= gettext "saber más" %></a></div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="modalRuben" tabindex="-1" role="dialog" aria-labelledby="modalRubenTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalRubenTitle"><%= gettext "Rubén Ibáñez" %> · <%= gettext "Guitarra rítmica y armónica cromática" %></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%= gettext "Su ascendencia andaluza hizo que este guitarrista comenzara su andadura a través del flamenco más jondo. Guitarra de acompañamiento al cante durante más de cinco años, se pasó al jazz manouche cuando descubrió cómo mediante la pompe, base del swing europeo, hacía bailar al más arrítmico de los mortales. Su formación en filología le ha llevado a ser el galán presentador del espectáculo, sorprendiendo siempre con su ingenio al auditorio. Al menos, eso cree él. Rubén és el responsable de los chasquidos de dedos de los oyentes, el colchón rítmico o, como a él le gusta decir, el encargado de mecer el cante. Rubén es también quien desarrolló esta página web." %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><%= gettext "Cerrar" %></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -119,9 +227,9 @@
     <div class="row">
       <div class="col text-center">
         <div class="section_title_container">
-          <div class="section_subtitle page_subtitle">What they say</div>
+          <div class="section_subtitle page_subtitle"><%= gettext "Lo que dicen de nosotros" %></div>
           <div class="section_title">
-            <h1>Testimonials</h1>
+            <h1><%= gettext "Testimonios" %></h1>
           </div>
         </div>
       </div>
@@ -135,9 +243,25 @@
             <div class="owl-item text-center">
               <div class="quote ml-auto mr-auto"><img src="images/quote.png" alt=""></div>
               <div class="test_text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla massa.</p>
+                <p><%= gettext "Os acabamos de escuchar en Banyoles, muchas felicidades! Hemos pasado un rato buenísimo con vosotros! sonido y ritmo intenso, le habéis dado vuestra pincelada a la música de Reinhardt... Genial!" %></p>
               </div>
-              <div class="test_info">James Smith, <span>Client</span></div>
+              <div class="test_info">Peipetit J.A., <span><%= gettext "mensaje privado" %></span></div>
+            </div>
+            <!-- Slide -->
+            <div class="owl-item text-center">
+              <div class="quote ml-auto mr-auto"><img src="images/quote.png" alt=""></div>
+              <div class="test_text">
+                <p><%= gettext "¡Qué elegancia!" %></p>
+              </div>
+              <div class="test_info">Sara C.W., <span><%= gettext "mensaje privado" %></span></div>
+            </div>
+            <!-- Slide -->
+            <div class="owl-item text-center">
+              <div class="quote ml-auto mr-auto"><img src="images/quote.png" alt=""></div>
+              <div class="test_text">
+                <p><%= gettext "Su música de raíz brota como expresión íntima de un pueblo, de una identidad" %></p>
+              </div>
+              <div class="test_info">Diego C., <span>Juventuts Musicals de Catalunya</span></div>
             </div>
           </div>
         </div>

@@ -14,4 +14,8 @@ defmodule SwingcaloWeb.CalendarView do
     """
     |> raw()
   end
+
+  def title() do
+    gettext("Calendario")
+  end
 end

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= language() %>">
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Swingcalo · Phoenix Framework</title>
+    <title>Swingcalo · <%= @view_module.title() %></title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <%= @view_module.uniq_css(@conn) %>
   </head>
@@ -22,17 +22,17 @@
                     <div>restaurant</div>
                   </a>
                 </div>
-                <nav class="main_nav">
-                  <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li><a href="<%= Routes.home_path(@conn, :index) %>">home</a></li>
-                    <li><a href="<%= Routes.band_path(@conn, :index) %>">band</a></li>
-                    <li><a href="<%= Routes.shows_path(@conn, :index) %>">shows</a></li>
-                    <li><a href="<%= Routes.media_path(@conn, :index) %>">media</a></li>
-                    <li><a href="<%= Routes.calendar_path(@conn, :index) %>">calendar</a></li>
-                    <li><a href="<%= Routes.contact_path(@conn, :index) %>">contact</a></li>
+                <nav class="main_nav w-100">
+                  <ul class="d-flex flex-row align-items-center justify-content-around">
+                    <li><a href="<%= Routes.home_path(@conn, :index) %>"><%= gettext "Inicio" %></a></li>
+                    <li><a href="<%= Routes.band_path(@conn, :index) %>"><%= gettext "La banda" %></a></li>
+                    <li><a href="<%= Routes.shows_path(@conn, :index) %>"><%= gettext "Espectáculos" %></a></li>
+                    <li><a href="<%= Routes.media_path(@conn, :index) %>"><%= gettext "Multimedia" %></a></li>
+                    <li><a href="<%= Routes.calendar_path(@conn, :index) %>"><%= gettext "Calendario" %></a></li>
+                    <li><a href="<%= Routes.contact_path(@conn, :index) %>"><%= gettext "Contacto" %></a></li>
                   </ul>
                 </nav>
-                <div class="reservations_phone ml-auto">Reservations: +34 586 778 8892</div>
+                <div class="reservations_phone ml-4 pl-4"><%= gettext "Idioma" %></div>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@
       <div class="hamburger_bar trans_400 d-flex flex-row align-items-center justify-content-start">
         <div class="hamburger">
           <div class="menu_toggle d-flex flex-row align-items-center justify-content-start">
-            <span>menu</span>
+            <span><%= gettext "Menú" %></span>
             <div class="hamburger_container">
               <div class="menu_hamburger">
                 <div class="line_1 hamburger_lines" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
@@ -57,15 +57,15 @@
       <div class="menu trans_800">
         <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
           <ul>
-            <li><a href="<%= Routes.home_path(@conn, :index) %>">home</a></li>
-            <li><a href="<%= Routes.band_path(@conn, :index) %>">band</a></li>
-            <li><a href="<%= Routes.shows_path(@conn, :index) %>">shows</a></li>
-            <li><a href="<%= Routes.media_path(@conn, :index) %>">media</a></li>
-            <li><a href="<%= Routes.calendar_path(@conn, :index) %>">calendar</a></li>
-            <li><a href="<%= Routes.contact_path(@conn, :index) %>">contact</a></li>
+            <li><a href="<%= Routes.home_path(@conn, :index) %>"><%= gettext "Inicio" %></a></li>
+            <li><a href="<%= Routes.band_path(@conn, :index) %>"><%= gettext "La banda" %></a></li>
+            <li><a href="<%= Routes.shows_path(@conn, :index) %>"><%= gettext "Espectáculos" %></a></li>
+            <li><a href="<%= Routes.media_path(@conn, :index) %>"><%= gettext "Multimedia" %></a></li>
+            <li><a href="<%= Routes.calendar_path(@conn, :index) %>"><%= gettext "Calendario" %></a></li>
+            <li><a href="<%= Routes.contact_path(@conn, :index) %>"><%= gettext "Contacto" %></a></li>
           </ul>
         </div>
-        <div class="menu_reservations_phone ml-auto">Reservations: +34 586 778 8892</div>
+        <div class="menu_reservations_phone ml-auto"><%= gettext "Idioma" %></div>
       </div>
       <%= render @view_module, @view_template, assigns %>
       <!-- Reservations -->
@@ -75,22 +75,21 @@
           <div class="row">
             <div class="col">
               <div class="reservations_content d-flex flex-column align-items-center justify-content-center">
-                <div class="res_stars page_subtitle">5 Stars</div>
-                <div class="res_title">Make a Reservation</div>
+                <div class="res_stars page_subtitle">Swingcaló</div>
+                <div class="res_title"><%= gettext "Contrátanos" %></div>
                 <div class="res_form_container">
                   <form action="#" id="res_form" class="res_form">
                     <div class="d-flex flex-sm-row flex-column align-items-center justify-content-start">
                       <input type="text" id="datepicker" class="res_input" required="required">
                       <input type="text" class="res_input timepicker" required="required">
                       <select class="res_select">
-                        <option disabled="" selected="">2 person</option>
-                        <option>3 person</option>
-                        <option>4 person</option>
-                        <option>5 person</option>
-                        <option>6 person</option>
+                        <option selected=""><%= gettext "Concierto" %></option>
+                        <option><%= gettext "Concierto para Baile" %></option>
+                        <option><%= gettext "Concierto didáctico" %></option>
+                        <option><%= gettext "Amenización de eventos" %></option>
                       </select>
                     </div>
-                    <button class="res_button">Make a Reservation</button>
+                    <button class="res_button"><%= gettext "Mándanos un mail" %></button>
                   </form>
                 </div>
               </div>
@@ -105,19 +104,14 @@
             <!-- Footer Logo -->
             <div class="col-lg-3 footer_col">
               <div class="footer_logo">
-                <div class="footer_logo_title">The Venue</div>
-                <div class="footer_logo_subtitle">restaurant</div>
+                <div class="footer_logo_title"><%= gettext "Swingcaló" %></div>
+                <div class="footer_logo_subtitle"><%= gettext "Jazz" %></div>
               </div>
-              <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                <p style="line-height: 1.2;">Copyright &copy;<script>
-                    document.write(new Date().getFullYear());
-                  </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
             </div>
             <!-- Footer About -->
             <div class="col-lg-6 footer_col">
               <div class="footer_about">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio.</p>
+                <p><%= gettext "Swingcaló es una banda de jazz manouche caracterizada por su repertorio heredero de la música popular. Sonido fiel al estilo, pero a su vez muy personal." %></p>
               </div>
             </div>
             <!-- Footer Contact -->
@@ -126,21 +120,25 @@
                 <ul>
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div>
-                      <div class="footer_contact_title">Address:</div>
+                      <div class="footer_contact_title"><%= gettext "Social:" %></div>
                     </div>
-                    <div class="footer_contact_text">481 Creekside Lane Avila CA 93424</div>
+                    <div class="footer_contact_text">
+                      <a target="_blank" href="https://www.facebook.com/swingcalo" style="text-decoration: none; color: lightgrey; font-size: 1.2rem;"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://www.youtube.com/channel/UCN9RlAaa68eCy4Pw3wmdUQg" style="text-decoration: none; color: lightgrey; font-size: 1.2rem;"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://twitter.com/Swingcalo" style="text-decoration: none; color: lightgrey; font-size: 1.2rem;"><i class="fa fa-twitter"></i></a>
+                    </div>
                   </li>
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div>
-                      <div class="footer_contact_title">Address:</div>
+                      <div class="footer_contact_title"><%= gettext "Teléfono:" %></div>
                     </div>
-                    <div class="footer_contact_text">+53 345 7953 32453</div>
+                    <div class="footer_contact_text"><a href="tel:+34616095379" style="text-decoration: none; color: white;">+34616095379</a></div>
                   </li>
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div>
-                      <div class="footer_contact_title">Address:</div>
+                      <div class="footer_contact_title"><%= gettext "Email:" %></div>
                     </div>
-                    <div class="footer_contact_text">yourmail@gmail</div>
+                    <div class="footer_contact_text"><a href="mailto:swingcalo@gmail.com" style="text-decoration: none; color: white;">swingcalo@gmail.com</a></div>
                   </li>
                 </ul>
               </div>

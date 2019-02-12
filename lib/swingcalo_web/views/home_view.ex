@@ -14,4 +14,8 @@ defmodule SwingcaloWeb.HomeView do
     """
     |> raw()
   end
+
+  def title() do
+    gettext("Inicio")
+  end
 end

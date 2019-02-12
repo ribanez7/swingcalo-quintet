@@ -14,4 +14,8 @@ defmodule SwingcaloWeb.MediaView do
     """
     |> raw()
   end
+
+  def title() do
+    gettext("Multimedia")
+  end
 end
