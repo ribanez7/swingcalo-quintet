@@ -3,8 +3,7 @@ defmodule SwingcaloWeb.CalendarView do
 
   def uniq_css(conn) do
     """
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/blog.css")}"/>
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/blog_responsive.css")}"/>
+    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/calendar.css")}"/>
     """
     |> raw()
   end

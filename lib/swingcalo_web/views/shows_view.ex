@@ -3,8 +3,7 @@ defmodule SwingcaloWeb.ShowsView do
 
   def uniq_css(conn) do
     """
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/menu.css")}"/>
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/menu_responsive.css")}"/>
+    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/shows.css")}"/>
     """
     |> raw()
   end

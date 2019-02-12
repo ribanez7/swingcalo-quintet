@@ -3,8 +3,7 @@ defmodule SwingcaloWeb.HomeView do
 
   def uniq_css(conn) do
     """
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/main_styles.css")}"/>
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/responsive.css")}"/>
+    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/home.css")}"/>
     """
     |> raw()
   end

@@ -3,8 +3,7 @@ defmodule SwingcaloWeb.MediaView do
 
   def uniq_css(conn) do
     """
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/elements.css")}"/>
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/elements_responsive.css")}"/>
+    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/media.css")}"/>
     """
     |> raw()
   end

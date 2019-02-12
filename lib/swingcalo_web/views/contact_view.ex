@@ -4,7 +4,6 @@ defmodule SwingcaloWeb.ContactView do
   def uniq_css(conn) do
     """
     <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/contact.css")}"/>
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/contact_responsive.css")}"/>
     """
     |> raw()
   end

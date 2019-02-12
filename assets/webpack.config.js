@@ -14,10 +14,16 @@ module.exports = (env, options) => ({
     ]
   },
   entry: {
-      './js/app.js': ['./js/app.js'].concat(glob.sync('./vendor/**/*.js'))
+      app: ['./js/app.js'].concat(glob.sync('./vendor/**/*.js')),
+      home: ['./js/home.js'],
+      band: ['./js/band.js'],
+      shows: ['./js/shows.js'],
+      media: ['./js/media.js'],
+      calendar: ['./js/calendar.js'],
+      contact: ['./js/contact.js'],
   },
   output: {
-    filename: 'app.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, '../priv/static/js')
   },
   module: {
@@ -68,7 +74,7 @@ module.exports = (env, options) => ({
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '../css/app.css' }),
+    new MiniCssExtractPlugin({ filename: '../css/[name].css' }),
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }]),
     new webpack.ProvidePlugin({
         $: "jquery",

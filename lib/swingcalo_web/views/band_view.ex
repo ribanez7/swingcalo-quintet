@@ -3,8 +3,7 @@ defmodule SwingcaloWeb.BandView do
 
   def uniq_css(conn) do
     """
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/about.css")}"/>
-    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/about_responsive.css")}"/>
+    <link rel="stylesheet" href="#{Routes.static_path(conn, "/css/band.css")}"/>
     """
     |> raw()
   end
