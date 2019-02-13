@@ -16,13 +16,12 @@ defmodule SwingcaloWeb.Router do
   scope "/", SwingcaloWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-    get "/home", HomeController, :index
-    get "/band", BandController, :index
-    get "/shows", ShowsController, :index
-    get "/media", MediaController, :index
-    get "/calendar", CalendarController, :index
-    get "/contact", ContactController, :index
+    get "/", HomeController, :index
+    get "/banda", BandController, :index
+    get "/espectaculos", ShowsController, :index
+    # get "/media", MediaController, :index
+    get "/calendario", CalendarController, :index
+    get "/contacto", ContactController, :index
   end
 
   # Other scopes may use custom stacks.
