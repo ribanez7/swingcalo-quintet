@@ -42,3 +42,4 @@ npm-debug.log
 /config/*.secret.exs
 /reference.html
 .DS_Store
+.deliver/releases/
