@@ -32,7 +32,7 @@
                     <li><a href="<%= Routes.contact_path(@conn, :index) %>"><%= gettext "Contacto" %></a></li>
                   </ul>
                 </nav>
-                <div class="reservations_phone ml-4 pl-4"><%= gettext "Idioma" %></div>
+                <!--<div class="reservations_phone ml-4 pl-4"><%#= gettext "Idioma" %></div>-->
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
             <li><a href="<%= Routes.contact_path(@conn, :index) %>"><%= gettext "Contacto" %></a></li>
           </ul>
         </div>
-        <div class="menu_reservations_phone ml-auto"><%= gettext "Idioma" %></div>
+        <!--<div class="menu_reservations_phone ml-auto"><%= gettext "Idioma" %></div>-->
       </div>
       <%= render @view_module, @view_template, assigns %>
       <!-- Reservations -->

@@ -17,20 +17,10 @@
   </div>
 </div>
 <!-- Contact -->
-<div class="contact">
+<div class="contact mt-0 pt-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="contact_title"><%= gettext "Información técnica:" %></div>
-        <div class="contact_text">
-          <p><%= gettext "Puedes ponerte en contacto con nosotros a través de cualquiera de las opciones que te presentamos aquí, sea por email, teléfono, o nuestras redes sociales." %></p>
-        </div>
-        <div class="contact_logo_container">
-          <div class="contact_logo_title"><%= gettext "Swingcaló" %></div>
-          <div class="contact_logo_subtitle"><%= gettext "Rider" %></div>
-        </div>
-      </div>
-      <div class="col-xl-5 col-lg-6">
+      <div class="col-lg-4 offset-lg-4 col-12">
         <div class="contact_list_container d-flex flex-column align-items-lg-center justify-content-start">
           <div class="contact_list_content">
             <ul class="contact_list">
@@ -49,28 +39,33 @@
             </ul>
             <div class="contact_social">
               <ul class="d-flex flex-row align-items-center justify-content-start">
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/swingcalo"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/Swingcalo"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCN9RlAaa68eCy4Pw3wmdUQg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 text-center mt-4">
-        <img src="images/ridergran.png" alt="rider">
-        <ul>
-          <li>El violín y la guitarra solista utilizan pastilla con conexión vía jack.</li>
-          <li>Contrabajo, clarinete y guitarra rítmica utilizan micro de condensador propio, conexión vía canon. Se necesita phantom.</li>
+        <div class="contact_logo_container">
+          <div class="contact_logo_title mb-3 pb-3"><%= gettext "Rider" %></div>
+        </div>
+        <img src="images/ridergran.png" class="img-fluid" alt="rider">
+        <div class="contact_logo_container">
+          <div class="contact_logo_subtitle mb-3 pb-3" style="line-height: 1rem;"><%= gettext "Especificaciones técnicas" %></div>
+        </div>
+        <ul class="list-group" style="font-size: 1.2rem;">
+          <li class="list-group-item">El violín y la guitarra solista utilizan pastilla con conexión vía jack.</li>
+          <li class="list-group-item">Contrabajo, clarinete y guitarra rítmica utilizan micro de condensador propio, conexión vía canon. Se necesita phantom.</li>
         </ul>
-        <div>Requerimientos mínimos para backline:</div>
-        <ul>
-          <li>Dos sillas sin brazos.</li>
-          <li>Un micro de voz.</li>
-          <li>Dos monitores.</li>
+        <div class="contact_logo_container">
+          <div class="contact_logo_subtitle mt-3 pt-3 mb-3 pb-3" style="line-height: 1rem;">Requerimientos mínimos para backline:</div>
+        </div>
+        <ul class="list-group" style="font-size: 1.2rem;">
+          <li class="list-group-item">Dos sillas sin brazos.</li>
+          <li class="list-group-item">Un micro de voz.</li>
+          <li class="list-group-item">Dos monitores.</li>
         </ul>
       </div>
     </div>

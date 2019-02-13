@@ -76,10 +76,10 @@
             </div>
             <div class="w-100"></div>
             <div class="col-lg-8 col-12">
-              <iframe frameborder='0' height='300' scrolling='no' src='https://www.google.com/calendar/embed?title=Swingcal%C3%B3%20Concerts%20Calendar&amp;showPrint=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=swingcalo%40gmail.com&amp;color=%232F6309&amp;ctz=Europe%2FMadrid' style=' border-width:0 ' width='600'></iframe>
+              <iframe frameborder='0' height='300' scrolling='no' src='https://www.google.com/calendar/embed?title=Swingcal%C3%B3%20Concerts%20Calendar&amp;showPrint=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=swingcalo%40gmail.com&amp;color=%232F6309&amp;ctz=Europe%2FMadrid' style=' border-width:0 ' width='100%' class="mb-5"></iframe>
             </div>
             <!-- Loader -->
-            <div class="col-lg-3 mt-lg-5 col-12 loader_col">
+            <div class="col-lg-3 mt-lg-5 col-12 loader_col mb-0 pb-0">
               <!-- Loader -->
               <div class="loader_container text-center">
                 <div class="loader text-center" data-perc="1.0"></div>

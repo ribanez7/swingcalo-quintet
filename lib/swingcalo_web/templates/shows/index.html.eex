@@ -114,7 +114,7 @@
                   <div class="sig_price ml-auto">10€</div>
                 </div>
                 <div class="sig_content_list">
-                  <ul class="d-flex flex-row align-items-center justify-content-start">
+                  <ul class="d-none d-lg-flex flex-row align-items-center justify-content-start">
                     <li>Tabú</li>
                     <li>Sheik of Araby</li>
                     <li>Caravan</li>
@@ -142,7 +142,7 @@
                   <div class="sig_price ml-auto">3€</div>
                 </div>
                 <div class="sig_content_list">
-                  <ul class="d-flex flex-row align-items-center justify-content-start">
+                  <ul class="d-none d-lg-flex flex-row align-items-center justify-content-start">
                     <li>Manoir de mes rêves</li>
                     <li>Sing sang sung</li>
                     <li>Cumbia Gitana</li>
