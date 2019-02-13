@@ -20,7 +20,7 @@ pre_erlang_get_and_update_deps() {
 pre_erlang_clean_compile() {
   status "Running npm install"
     __sync_remote "
-      [ -f ~/.profile ] && source ~/.profile
+      [ -f ~/.bashrc ] && source ~/.bashrc
       set -e
       cd '$BUILD_AT'/assets
       npm install
