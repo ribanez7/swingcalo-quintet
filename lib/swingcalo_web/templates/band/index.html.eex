@@ -1,6 +1,6 @@
 <!-- Home -->
 <div class="home">
-  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
+  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/swingcalo-20.jpg" data-speed="0.8"></div>
   <div class="home_container">
     <div class="container">
       <div class="row">
@@ -32,7 +32,7 @@
         </div>
         <div class="row">
           <div class="col-lg-8">
-            <div class="intro_image"><img src="images/about_intro.jpg" alt="https://unsplash.com/@quanle2819"></div>
+            <div class="intro_image"><img src="images/swingcalo-risas.jpg" alt="swingcaló risas"></div>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
       <!-- Musician -->
       <div class="col-xl-2 offset-xl-1 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
-          <div class="chef_image"><img src="images/chef_1.jpg" alt=""></div>
+          <div class="chef_image"><img src="images/swingcalo-andres.jpg" alt=""></div>
           <div class="chef_content text-center">
             <div class="chef_name"><%= gettext "Andrés Cruz" %></div>
             <div class="chef_subtitle"><%= gettext "Violín" %></div>
@@ -100,7 +100,7 @@
       <!-- Musician -->
       <div class="col-xl-2 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
-          <div class="chef_image"><img src="images/chef_2.jpg" alt=""></div>
+          <div class="chef_image"><img src="images/swingcalo-dani.jpg" alt=""></div>
           <div class="chef_content text-center">
             <div class="chef_name"><%= gettext "Dani López" %></div>
             <div class="chef_subtitle"><%= gettext "Guitarra" %></div>
@@ -130,7 +130,7 @@
       <!-- Musician -->
       <div class="col-xl-2 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
-          <div class="chef_image"><img src="images/chef_3.jpg" alt=""></div>
+          <div class="chef_image"><img src="images/swingcalo-diego.jpg" alt=""></div>
           <div class="chef_content text-center">
             <div class="chef_name"><%= gettext "Diego Civilotti" %></div>
             <div class="chef_subtitle"><%= gettext "Contrabajo" %></div>
@@ -160,7 +160,7 @@
       <!-- Musician -->
       <div class="col-xl-2 col-md-6 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
-          <div class="chef_image"><img src="images/chef_4.jpg" alt=""></div>
+          <div class="chef_image"><img src="images/swingcalo-laura.jpg" alt=""></div>
           <div class="chef_content text-center">
             <div class="chef_name"><%= gettext "Laura Lacueva" %></div>
             <div class="chef_subtitle"><%= gettext "Clarinete" %></div>
@@ -190,7 +190,7 @@
       <!-- Musician -->
       <div class="col-xl-2 offset-xl-0 col-md-6 offset-md-3 chef_col d-flex flex-column align-items-center justify-content-end">
         <div class="chef">
-          <div class="chef_image"><img src="images/chef_4.jpg" alt=""></div>
+          <div class="chef_image"><img src="images/swingcalo-ruben.jpg" alt=""></div>
           <div class="chef_content text-center">
             <div class="chef_name"><%= gettext "Rubén Ibáñez" %></div>
             <div class="chef_subtitle"><%= gettext "Guitarra y armónica" %></div>

@@ -9,3 +9,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import "theme/colorbox/colorbox.css";
 @import "theme/jquery-datepicker/jquery-ui.css";
 @import "theme/jquery-timepicker/jquery.timepicker.css";
+
+.header {
+  background: rgba(0, 0, 0, .33);
+}

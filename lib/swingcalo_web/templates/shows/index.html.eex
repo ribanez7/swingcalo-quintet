@@ -1,6 +1,6 @@
 <!-- Home -->
 <div class="home">
-  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/menu.jpg" data-speed="0.8"></div>
+  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/swingcalo-35.jpg" data-speed="0.8"></div>
   <div class="home_container">
     <div class="container">
       <div class="row">
@@ -127,7 +127,7 @@
               </div>
             </div>
             <div class="col-lg-6 sig_col">
-              <div class="sig_image"><img src="images/sig_1.jpg" alt=""></div>
+              <div class="sig_image"><img src="images/swingcalo-ep.jpg" alt=""></div>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@
               </div>
             </div>
             <div class="col-lg-6 sig_col">
-              <div class="sig_image"><img src="images/sig_2.jpg" alt=""></div>
+              <div class="sig_image"><img src="images/swingcalo-didactico.jpg" alt=""></div>
             </div>
           </div>
         </div>

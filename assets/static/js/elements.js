@@ -109,7 +109,7 @@ $(document).ready(function()
 		var dateM = date.getMonth() + 1;
 		var dateD = date.getDate();
 		var dateY = date.getFullYear();
-		var dateFinal = dateM + '/' + dateD + '/' + dateY;
+    var dateFinal = dateD + '/' + dateM + '/' + dateY;
 		dp.val(dateFinal);
 		dp.datepicker();
 	}
@@ -124,14 +124,14 @@ $(document).ready(function()
 	{
 		$('.timepicker').timepicker(
 		{
-		    interval: 60,
-		    minTime: '10',
-		    maxTime: '6:00pm',
-		    defaultTime: '11',
-		    startTime: '10:00',
-		    dynamic:  true,
-		    dropdown: true,
-		    scrollbar: true
+        interval: 60,
+        minTime: '01',
+        maxTime: '11:00pm',
+        defaultTime: '11',
+        startTime: '10:00',
+        dynamic:  true,
+        dropdown: true,
+        scrollbar: true
 		});
 	}
 

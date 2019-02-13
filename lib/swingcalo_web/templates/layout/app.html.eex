@@ -18,8 +18,8 @@
               <div class="header_content d-flex flex-row align-items-center justify-content-start">
                 <div class="logo">
                   <a href="#">
-                    <div>The Venue</div>
-                    <div>restaurant</div>
+                    <div>Swingcaló</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jazz</div>
                   </a>
                 </div>
                 <nav class="main_nav w-100">
@@ -60,7 +60,7 @@
             <li><a href="<%= Routes.home_path(@conn, :index) %>"><%= gettext "Inicio" %></a></li>
             <li><a href="<%= Routes.band_path(@conn, :index) %>"><%= gettext "La banda" %></a></li>
             <li><a href="<%= Routes.shows_path(@conn, :index) %>"><%= gettext "Espectáculos" %></a></li>
-            <li><a href="<%= Routes.media_path(@conn, :index) %>"><%= gettext "Multimedia" %></a></li>
+            <!--<li><a href="<%#= Routes.media_path(@conn, :index) %>"><%#= gettext "Multimedia" %></a></li>-->
             <li><a href="<%= Routes.calendar_path(@conn, :index) %>"><%= gettext "Calendario" %></a></li>
             <li><a href="<%= Routes.contact_path(@conn, :index) %>"><%= gettext "Contacto" %></a></li>
           </ul>
@@ -70,7 +70,7 @@
       <%= render @view_module, @view_template, assigns %>
       <!-- Reservations -->
       <div class="reservations text-center">
-        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/reservations.jpg" data-speed="0.8"></div>
+        <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/esp_03.jpg" data-speed="0.8"></div>
         <div class="container">
           <div class="row">
             <div class="col">

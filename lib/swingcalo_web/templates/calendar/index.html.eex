@@ -1,6 +1,6 @@
 <!-- Home -->
 <div class="home">
-  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/blog.jpg" data-speed="0.8"></div>
+  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/swingcalo-risas.jpg" data-speed="0.8"></div>
   <div class="home_container">
     <div class="container">
       <div class="row">
@@ -28,7 +28,7 @@
             <!-- Milestone -->
             <div class="col-xl-3 col-md-6 milestone_col">
               <div class="milestone d-flex flex-row align-items-end justify-content-md-center justify-content-start">
-                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/icon_1.png" alt=""></div>
+                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/conciertos.png" alt=""></div>
                 <div class="milestone_content">
                   <div class="milestone_counter" data-end-value="129">0</div>
                   <div class="milestone_text"><%= gettext "Conciertos" %></div>
@@ -38,7 +38,7 @@
             <!-- Milestone -->
             <div class="col-xl-3 col-md-6 milestone_col">
               <div class="milestone d-flex flex-row align-items-end justify-content-md-center justify-content-start">
-                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/icon_2.png" alt=""></div>
+                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/directos.png" alt=""></div>
                 <div class="milestone_content">
                   <div class="milestone_counter" data-end-value="332">0</div>
                   <div class="milestone_text"><%= gettext "Horas de directo" %></div>
@@ -48,7 +48,7 @@
             <!-- Milestone -->
             <div class="col-xl-3 col-md-6 milestone_col">
               <div class="milestone d-flex flex-row align-items-end justify-content-md-center justify-content-start">
-                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/icon_3.png" alt=""></div>
+                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/ensayos.png" alt=""></div>
                 <div class="milestone_content">
                   <div class="milestone_counter" data-end-value="36897">0</div>
                   <div class="milestone_text"><%= gettext "Horas de ensayo" %></div>
@@ -58,7 +58,7 @@
             <!-- Milestone -->
             <div class="col-xl-3 col-md-6 milestone_col">
               <div class="milestone d-flex flex-row align-items-end justify-content-md-center justify-content-start">
-                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/icon_4.png" alt=""></div>
+                <div class="milestone_icon d-flex flex-column align-items-center justify-content-end"><img src="images/seguidores.png" alt=""></div>
                 <div class="milestone_content">
                   <div class="milestone_counter" data-end-value="1252">0</div>
                   <div class="milestone_text"><%= gettext "Seguidores" %></div>
@@ -75,11 +75,11 @@
               <h3 class="mb-5"><%= gettext "Así que no te pierdas nuestros próximos conciertos:" %></h3>
             </div>
             <div class="w-100"></div>
-            <div class="col-lg-9 col-12">
+            <div class="col-lg-8 col-12">
               <iframe frameborder='0' height='300' scrolling='no' src='https://www.google.com/calendar/embed?title=Swingcal%C3%B3%20Concerts%20Calendar&amp;showPrint=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=swingcalo%40gmail.com&amp;color=%232F6309&amp;ctz=Europe%2FMadrid' style=' border-width:0 ' width='600'></iframe>
             </div>
             <!-- Loader -->
-            <div class="col-lg-3 col-12 loader_col">
+            <div class="col-lg-3 mt-lg-5 col-12 loader_col">
               <!-- Loader -->
               <div class="loader_container text-center">
                 <div class="loader text-center" data-perc="1.0"></div>
